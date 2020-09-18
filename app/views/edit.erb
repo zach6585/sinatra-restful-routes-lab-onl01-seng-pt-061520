@@ -1,1 +1,6 @@
+<%= "Current Name: #{@recipe.name}" %>
+<%= "Current Ingredients: #{@recipe.ingredients}" %>
+<%= "Current Cook Time: #{@recipe.cook_time}" %>
+
 <form method="post" action="/recipes/:id/edit">
+  <input type="hidden" id="hidden" name="_method"
